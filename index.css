@@ -1,0 +1,116 @@
+/*google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* layout */
+:root {
+  --primary-color: #1aac83;
+  --error: #e7195a;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #333;
+}
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header .nav {
+  display: flex;
+  gap: 10px;
+}
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+/*home page */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #000;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f5f5f5;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+/*new workout form */
+label,
+input {
+  display: block;
+  margin: 10px 0;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var (--primary-color);
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error {
+  padding: 10px;
+  background-color: #ffefef;
+  border: 1px solid var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
